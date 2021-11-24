@@ -55,17 +55,10 @@ table .tengah{
 .icon{
   width: 15px;
 }
-.iconSort{
-  width: 12px;
-  margin-left: -6px;
-}
+
 
 .icon:hover{
   width: 20px;
-  cursor: pointer;
-}
-
-.iconSort:hover{
   cursor: pointer;
 }
 

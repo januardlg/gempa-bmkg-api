@@ -11,11 +11,10 @@ const GempaTable = (props) => {
             <>  
                 <table>
                     <thead>
-                        {/* <tr>{props.dirasakan[0] && columns.map((heading) => <th>{heading}</th>)}</tr> */}
                         <tr>
                             <th>Tanggal</th>
                             <th>Jam</th>
-                            <th>DateTime <span onClick={() => props.sorting("DateTime")}><img className="iconSort" src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"/></span> </th>
+                            <th>DateTime <span onClick={() => props.sorting("DateTime")}><img className="icon" src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"/></span> </th>
                             <th>Coordinates</th>
                             <th>Lintang</th>
                             <th>Bujur</th>
@@ -30,8 +29,7 @@ const GempaTable = (props) => {
                             <tr>
                                <td>{gempa.Tanggal}</td>
                                <td>{gempa.Jam}</td>
-                               {/* <td>{gempa.DateTime}</td> */}
-                               <td>{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(gempa.DateTime))) }</td>
+                               <td>{new Date(Date.parse(gempa.DateTime)).toLocaleString()}</td>
                                <td>{gempa.Coordinates}</td>
                                <td>{gempa.Lintang}</td>
                                <td>{gempa.Bujur}</td>

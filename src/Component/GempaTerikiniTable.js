@@ -13,7 +13,6 @@ const GempaTerkini = (props) => {
             <>  
                 <table>
                     <thead>
-                        {/* <tr>{props.terkinis[0] && columns.map((heading) => <th>{heading}</th>)}</tr> */}
                         <tr>
                             <th>Tanggal</th>
                             <th>Jam</th>
@@ -32,8 +31,7 @@ const GempaTerkini = (props) => {
                             <tr>
                                <td>{terkini.Tanggal}</td>
                                <td>{terkini.Jam}</td>
-                               {/* <td>{terkini.DateTime}</td> */}
-                               <td>{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(terkini.DateTime))) }</td>
+                               <td>{new Date(Date.parse(terkini.DateTime)).toLocaleString()}</td>
                                <td>{terkini.Coordinates}</td>
                                <td>{terkini.Lintang}</td>
                                <td>{terkini.Bujur}</td>
