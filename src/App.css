@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+
+/* ==Header Design== */
+.navbar{
+  background-color: #3A3E52;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.link{
+  margin-right: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logout{
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kosong{
+  color: blue;
+  text-align: center;
 }
+
+
+/* ==Table Design== */
+
+h5{
+  text-align: center;
+}
+table{
+  width: 100%;
+  margin-top: 10px;
+}
+
+thead{
+  color:#3A3E52 ;
+  font-weight: none;
+  text-align: center;
+}
+
+table,th, td {
+  border: 1px solid #999;
+  font-size: 13px;
+  padding: 1px;
+}
+
+table .tengah{
+  text-align: center;
+}
+
+.filter{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon{
+  width: 15px;
+}
+.iconSort{
+  width: 12px;
+  margin-left: -6px;
+}
+
+.icon:hover{
+  width: 20px;
+  cursor: pointer;
+}
+
+.iconSort:hover{
+  cursor: pointer;
+}
+
+
+
+/*==Login style==*/
+
+.cardtitle{
+  text-align: center;
+}
+
+.cardbody{
+  margin-top: 20%;
+  background-color: #1D1F2B;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+  
+}
+
+.info{
+  text-align: center;
+  color: red;
+}
+
+
+.inputs{
+  margin-bottom:20px;
+  text-align: left;
+}
+
+input{
+  display: block;
+  width: 100%;
+  background-color: #3A3E52;
+  border: none;
+  height: 35px;
+  color: white;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+
+
