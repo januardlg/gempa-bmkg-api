@@ -12,7 +12,7 @@ const GempaTable = (props) => {
                 <table>
                     <thead>
                         <tr>
-                            <th>Tanggal</th>
+                            <th>Tanggal - New</th>
                             <th>Jam</th>
                             <th>DateTime <span onClick={() => props.sorting("DateTime")}><img className="icon" src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"/></span> </th>
                             <th>Coordinates</th>
