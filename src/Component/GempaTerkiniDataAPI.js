@@ -51,7 +51,7 @@ function GempaTerikiniDataAPI(){
         <>
             <Header />
             <div className="col-12">
-                <h5>Gempabumi Terkini - Heading</h5>
+                <h5>Gempabumi Terkini - Heading -New</h5>
                 <div className="filter">
                     <select onChange={(e) => setQ(e.target.value)} >
                     <option value={""}> Filter Sesuai potensi </option>

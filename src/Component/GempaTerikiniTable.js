@@ -15,7 +15,7 @@ const GempaTerkini = (props) => {
                     <thead>
                         <tr>
                             <th>Tanggal</th>
-                            <th>Jam</th>
+                            <th>Jam(WIB)</th>
                             <th>DateTime <span onClick={() => props.sorting("DateTime")}><img className="icon" src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"/></span> </th>
                             <th>Coordinates</th>
                             <th>Lintang</th>
